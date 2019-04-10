@@ -1,9 +1,10 @@
 .title {
     width: 100%;
     height: 20px;
+    margin-bottom: 15px;
 }
 .title ul{
-    padding-left: 16px;
+    padding-left: 0;
     margin: 0;
 }
 .title li{
@@ -14,8 +15,13 @@
     font-family: "roboto";
     font-style: normal;
     text-decoration: none;
+    font-size: 24px;
 }
 
 ion-label{
     margin-top: 5px;
+}
+
+ion-input {
+    text-decoration: none;
 }
