@@ -1,21 +1,29 @@
-<ion-header>
-  <ion-toolbar>
-   	<ion-title>
-      Siloplus
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content padding center text-left>
+	<ion-list>
+		<div class="title">
+		<ul>
+			<li><a href="#">Daftar</a></li>
+			<li><a href="#">Masuk	</a></li>
+		</ul>
+		</div>
+			<ion-item>
+					<ion-label position="stacked">Member ID</ion-label>
+					<ion-input type="text"></ion-input>
+			</ion-item>
+			<ion-item>
+					<ion-label position="stacked">No. Telepon</ion-label>
+					<ion-input type="number"></ion-input>
+			</ion-item>
+			<ion-item>
+					<ion-label position="stacked">Kata Sandi</ion-label>
+					<ion-input type="password"></ion-input>
+			</ion-item>
+			<ion-item>
+					<ion-label position="stacked">Konfirmasi Kata Sandi</ion-label>
+					<ion-input type="password"></ion-input>
+			</ion-item>
+	</ion-list>
 
-<ion-content>
-	<ion-item class="ion-padding-bottom">
-	  <ion-label position="stacked">username</ion-label>
-	  <ion-input type="text" [(ngModel)]="username" style="background: red;"></ion-input>
 
-	  <ion-label position="stacked">password</ion-label>
-	  <ion-input type="password"></ion-input>
-	</ion-item>
 
-<ion-button expand="full">Login</ion-button>
-<img src="">
 </ion-content>
-
