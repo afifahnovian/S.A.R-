@@ -1,0 +1,31 @@
+<ion-content >
+  <ion-slides pager (ionSlideDidChange)="slideChanged()" (ionSlideDrag)="slideMoved()" >
+      <ion-slide>
+        <div class="diag" style="background : url('assets/imgs/onboard/onboard-rpl--wait.png')no-repeat">
+          <ion-img src="assets/imgs/onboard/onboard-rpl--wait.png" [@bounce]='state' (@bounce.done)="animationDone()"></ion-img>
+        </div>
+        <div>
+          <h2 >Kamu tidak perlu antri lagi!</h2>
+          <p>Cukup daftar berobat via Siloplus!<p>
+        </div>
+      </ion-slide>
+      <ion-slide>
+          <div  class="diag" style="background : url('assets/imgs/onboard/onboard-rpl--cek-jadwal-dokter.png')no-repeat">
+            <ion-img src="assets/imgs/onboard/onboard-rpl--cek-jadwal-dokter.png" (@bounce.done)="animationDone()" ></ion-img>
+          </div>
+          <div>
+            <h2>Sebelum datang, cek dulu</h2>
+            <p> jadwal dokter yang diinginkan!<p>
+          </div>
+      </ion-slide>
+      <ion-slide>
+          <div class="diag" style="background : url('assets/imgs/onboard/onboard-rpl--start.png')no-repeat">
+            <ion-img src="assets/imgs/onboard/onboard-rpl--start.png" (@bounce.done)="animationDone()"></ion-img>
+          </div>
+          <div>
+            <h2 >Yuk , Mulai menggunakan Siloplus!</h2>
+          </div>
+      </ion-slide>
+  </ion-slides>
+  <button (click)="skip()" id="skip">{{ skipMsg }}</button>
+</ion-content>

@@ -1,0 +1,63 @@
+h2{ // style paragraf
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    position: absolute;
+    width: 306px;
+    height: 55px;
+    left: 27px;
+    top: 450px;
+    color: #70ABB0;
+}
+p{ //style paragraf
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    position: absolute;
+    width: 306px;
+    height: 55px;
+    left: 27px;
+    top: 481px;
+    color: #70ABB0; }
+
+ion-img{ // posisi image
+    position: absolute;
+    width: 319px;
+    height: 403px;
+    left: 21px;
+    top: 30px;
+    background-color: transparent
+}
+.swiper-pagination-bullet-active{ // swipe bullet
+    background: #91CED4;
+}
+ion-content{ //background
+    background: linear-gradient(0.36deg, #DEFCFC 0.17%, #FFFFFF 101.49%, #91CED4 101.49%);
+}
+
+.swiper-pagination {
+    bottom: 12% !important
+}
+
+#skip {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    background: none !important;
+    text-align: center;
+    cursor: pointer;
+    z-index : 5;
+    color:  #426366;
+}
