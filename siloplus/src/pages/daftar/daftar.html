@@ -1,0 +1,44 @@
+<ion-content>
+    <form style="background: transparent;">
+      <ion-title>
+        <ul>
+          <li>
+            <a href="#" class="active">Daftar</a>
+          </li>
+          <li class="separator"></li>
+          <li class="masuk">
+            <a (click)="OpenLogin()">Masuk</a>
+          </li>
+        </ul>
+      </ion-title>
+
+      <ion-list>
+        <ion-item>
+          <ion-label stacked color="primary">Member Id</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label stacked color="primary">No. Telepon</ion-label>
+            <ion-input type="number"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label stacked color="primary">Kata Sandi</ion-label>
+            <ion-input type="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label stacked color="primary">Konfirmasi Kata Sandi</ion-label>
+            <ion-input type="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <button ion-button type="submit" color="#CBF1F5" full class="sub-but">Daftar</button>
+        </ion-item>
+      </ion-list>
+    </form>
+      <div class="box-pendaftar">
+        <a href="#" class="sudah-daftar">Saya sudah mendaftar</a>
+      </div>
+    </ion-content>

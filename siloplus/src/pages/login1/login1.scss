@@ -1,0 +1,106 @@
+page-login1{
+  .list-md .item-block .item-inner {
+    border-bottom: 0;
+  }
+
+  ion-content{
+    width: 554.33px;
+    height: 232.96px;
+    left: -96px;
+    top: 456px;
+    background: linear-gradient(180deg, #DEFCFC 0%, #99E1E5 100%);
+    // background: linear-gradient(0.36deg, #DEFCFC 0.17%, #FFFFFF 101.49%, #91CED4 101.49%);
+  }
+  .toolbar-title-md{
+    padding: 0;
+  }
+  ion-title ul{
+    padding-left: 0;
+  }
+
+  ion-title ul li{
+    text-decoration: none;
+    display: inline;
+  }
+  .masuk{
+    margin-left: 10px;
+  }
+
+  .masuk a{
+    color: #70ABB0;
+  }
+
+  .separator{
+    width: 4px;
+    height: 24px;
+    border: 2px solid #A6E3E9;
+  }
+
+
+  .item-md{
+    background: transparent;
+  }
+
+
+  ion-title a{
+    margin-right: 5px;
+    text-decoration: none;
+    color: #C4C4C4;
+  }
+
+  ion-title a:active{
+    color:#70ABB0;
+  }
+
+  .scroll-content{
+    padding: 50px 40px;
+  }
+
+  .label-md[stacked] {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    color: #70ABB0;
+    margin-bottom: 5px;
+
+  }
+
+  ion-input{
+    background: #CBF1F5;
+    border-radius: 15px;
+    padding: 0px 10px;
+    box-shadow: 15px 5px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .button-inner{
+    text-align: center;
+    color: black;
+    border-radius: 15px;
+
+  }
+
+  .button-md{
+    border-radius: 15px;
+    background : linear-gradient(90deg, #99E1E5 0%, #DEFCFC 100%);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.10);
+  }
+  .label-md {
+    margin: 13px 0px 13px 0;
+  }
+  .sub-but{
+    margin: 35px 0 30px;
+    color: #426366
+  }
+
+  .box-pendaftar{
+    margin-top: 40%;
+    text-align: center;
+  }
+
+  .sudah-daftar{
+    text-align: center;
+    color: #426366;
+  }
+}
+
