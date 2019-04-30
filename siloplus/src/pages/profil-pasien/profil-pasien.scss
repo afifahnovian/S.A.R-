@@ -63,6 +63,27 @@
     color: #70ABB0;
 }
 
-ion-content{
+.backg{
     background: linear-gradient(0.36deg, #DEFCFC 0.17%, #FFFFFF 101.49%, #91CED4 101.49%);
+}
+
+.tombol{
+    position: absolute;
+    left: 250px;
+    top:  10px;
+    
+}
+
+.datadiri{
+    position: absolute;
+    left: 230px;
+    top:  40px;
+    
+}
+
+.riwayat{
+    position: absolute;
+    left: 230px;
+    top:  40px;
+    
 }

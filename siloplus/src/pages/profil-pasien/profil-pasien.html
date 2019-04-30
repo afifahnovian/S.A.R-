@@ -1,12 +1,5 @@
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>ProfilPasien</ion-title>
-  </ion-navbar>
-
-</ion-header>
-<ion-content padding>
-  
+<ion-content class="backg" padding>
+    <ion-icon class="tombol" name="ios-settings" style="zoom:1.5;" (click)="gotoSettingPage()"></ion-icon>
     <p id="p1">Marimar</p>
     <p id="p2">ID 121212</p>
     <ion-card class="card1">
@@ -14,6 +7,7 @@
         Data Diri
       </ion-card-header>
       <ion-card-content class="font1">
+          <ion-icon class="datadiri" name="arrow-forward" style="zoom:1.2" (click)="gotoDataDiriPage()"></ion-icon>
         Konten Kosong
       </ion-card-content>
     </ion-card>
@@ -23,6 +17,7 @@
       Riwayat Berobat
     </ion-card-header>
     <ion-card-content class="font1">
+        <ion-icon class="riwayat" name="arrow-forward" style="zoom:1.2" (click)="gotoRiwayatBerobatPage()"></ion-icon>
       Kontennya Kosong
     </ion-card-content>
   </ion-card>
