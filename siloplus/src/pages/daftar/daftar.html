@@ -1,4 +1,4 @@
-<ion-content>
+<ion-content padding>
     <form style="background: transparent;">
       <ion-title>
         <ul>
@@ -12,7 +12,7 @@
         </ul>
       </ion-title>
 
-      <ion-list>
+      <ion-list padding>
         <ion-item>
           <ion-label stacked color="primary">Member Id</ion-label>
           <ion-input type="text"></ion-input>
@@ -34,11 +34,13 @@
         </ion-item>
 
         <ion-item>
-            <button ion-button type="submit" color="#CBF1F5" full class="sub-but">Daftar</button>
+            <button ion-button type="submit" color="#CBF1F5" full class="sub-but" (click)='gotohome()'>Daftar</button>
         </ion-item>
       </ion-list>
     </form>
-      <div class="box-pendaftar">
+
+      <div class="box-pendaftar" (click)="OpenLogin()">
         <a href="#" class="sudah-daftar">Saya sudah mendaftar</a>
       </div>
+
     </ion-content>

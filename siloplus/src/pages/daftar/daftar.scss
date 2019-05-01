@@ -6,16 +6,18 @@ page-daftar{
     border-bottom: 0;
   }
 
+  .list-md{ //jarak list
+      padding: 60px 20px 10px;
+  }
   ion-content{
     background: linear-gradient(0.36deg, #DEFCFC 0.17%, #FFFFFF 101.49%, #91CED4 101.49%);
   }
   .toolbar-title-md{
-    padding: 0;
+    padding: 85px 5px 10px;
   }
   ion-title ul{
     padding-left: 0;
   }
-
   ion-title ul li{
     text-decoration: none;
     display: inline;
@@ -28,13 +30,9 @@ page-daftar{
     height: 24px;
     border: 2px solid #A6E3E9;
   }
-
-
   .item-md{
     background: transparent;
   }
-
-
   ion-title a{
     margin-right: 5px;
     text-decoration: none;
@@ -49,8 +47,8 @@ page-daftar{
     color:#70ABB0;
   }
 
-  .scroll-content{
-    padding: 50px 40px 10px;
+  .scroll-content .list-md{
+    padding: 70px 8px 10px;
   }
   .label-md[stacked] {
     font-family: Roboto;
@@ -59,7 +57,6 @@ page-daftar{
     font-weight: 500;
     color: #70ABB0;
     margin-bottom: 5px;
-
   }
 
   ion-input{
@@ -68,14 +65,13 @@ page-daftar{
     padding: 0px 10px;
     box-shadow: 15px 5px 5px rgba(0, 0, 0, 0.1);
   }
-
+ 
   .button-inner{
     text-align: center;
     color: black;
     border-radius: 15px;
 
   }
-
   .button-md{
     border-radius: 15px;
     background : linear-gradient(90deg, #99E1E5 0%, #DEFCFC 100%);
@@ -91,13 +87,17 @@ page-daftar{
 
   .box-pendaftar{
     margin-top: auto;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: normal;
     text-align: center;
+    
+    background-color: transparent;
   }
-
 
   .sudah-daftar{
     text-align: center;
     color: #426366;
   }
-}
 
+}
