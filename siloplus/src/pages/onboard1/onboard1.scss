@@ -1,3 +1,11 @@
+ion-img.ng-tns-c0-0.ng-trigger.ng-trigger-bounce.img-loaded{
+    position: absolute;
+    width: 390px;
+    height: 429px;
+    left: 12px;
+    top: 30px;
+    background-color: transparent
+}
 h2{ // style paragraf
     font-family: Roboto;
     font-style: normal;
@@ -6,8 +14,6 @@ h2{ // style paragraf
     line-height: normal;
     text-align: center;
     position: absolute;
-    width: 306px;
-    height: 55px;
     left: 27px;
     top: 450px;
     color: #70ABB0;
@@ -20,31 +26,26 @@ p{ //style paragraf
     line-height: normal;
     text-align: center;
     position: absolute;
-    width: 306px;
-    height: 55px;
-    left: 27px;
-    top: 481px;
-    color: #70ABB0; }
-
-ion-img{ // posisi image
-    position: absolute;
-    width: 319px;
-    height: 403px;
-    left: 21px;
-    top: 30px;
-    background-color: transparent
+    left: 38px;
+    top: 455px;
+    color: #70ABB0; 
 }
+p.ng-tns-c0-0{
+    left: 50px;
+    top: 455px;
+    text-align: center;
+}
+
+
 .swiper-pagination-bullet-active{ // swipe bullet
     background: #91CED4;
 }
 ion-content{ //background
     background: linear-gradient(0.36deg, #DEFCFC 0.17%, #FFFFFF 101.49%, #91CED4 101.49%);
 }
-
 .swiper-pagination {
     bottom: 12% !important
 }
-
 #skip {
     font-family: Roboto;
     font-style: normal;

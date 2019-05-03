@@ -32,29 +32,23 @@ export class Onboard1Page {
   state : string = 'x';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad Onboard1Page');
   }
-
   skip(){ // jika ditekan tombol skip, direct to home 
     this.navCtrl.push(HomePage);
   }
-
   slideChanged(){ // pas slide terakhir
     if(this.slides.isEnd())
       this.skipMsg = " Ok, saya mengerti";
   }
-
   slideMoved(){ // perpindahan slide
     if(this.slides.getActiveIndex() >= this.slides.getPreviousIndex())
       this.state = 'rightSwipe';
     else
       this.state = 'leftSwipe';
   }
- 
   animationDone(){
     this.state = 'x';
   }
-
 }
