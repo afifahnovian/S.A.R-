@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { SettingPage } from '../setting/setting';
 import { DataDiriPage } from '../data-diri/data-diri';
-import { RiwayatBerobatPage } from '../riwayat-berobat/riwayat-berobat';
 
 
 
@@ -15,9 +14,6 @@ export class ProfilPasienPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  gotoRiwayatBerobatPage(){
-    this.navCtrl.push(RiwayatBerobatPage);
-  }
 
   gotoDataDiriPage(){
     this.navCtrl.push(DataDiriPage);
@@ -26,7 +22,6 @@ export class ProfilPasienPage {
   gotoSettingPage(){
     this.navCtrl.push(SettingPage);
   }
-  
   
 }
 
