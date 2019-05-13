@@ -1,47 +1,59 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Data } from '../../providers/data';
+import {  NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { Http } from '@angular/http';
-/**
- * Generated class for the PoliklinikPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Data } from '../../providers/data';
+import { Pasien } from '../../providers/pasien';
+import { TabsPage } from '../tabs/tabs';
 
-@IonicPage()
 @Component({
-  selector: 'page-poliklinik',
-  templateUrl: 'poliklinik.html',
+  selector: 'page-contact',
+  templateUrl: 'contact.html'
 })
 export class PoliklinikPage {
 
-  poliklinik : any;
-  constructor(
-  	public navCtrl: NavController, 
-  	public navParams: NavParams,
-  	public data: Data,
-  	public http: Http
-  	) {
-  }
+  memesan = false;
+  pramemesan = true;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PoliklinikPage');
+  pasien = {} as Pasien;
+  poliklinik:any;
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public loadCtrl: LoadingController,
+    public alertCtrl: AlertController,
+    public http: Http,
+    public data:Data
+    ) {
+
   }
 
   ionViewWillEnter() {
-  	this.getDataPoli();
+    this.data.getDataPasien().then((data) => {
+      this.pasien.member_id = data.member_id;
+    })
   }
 
-  getDataPoli(){
-  	this.http.get(this.data.BASE_URL+"/read_poliklinik.php").subscribe(data => {
+  pesanAntrian(){
+
+    let input = JSON.stringify({
+      member_id: this.pasien.member_id,
+      poliklinik: this.poliklinik
+    });
+
+    console.log(input);
+    this.http.post(this.data.BASE_URL+"/antrian.php", input).subscribe(data => {
       let response = data.json();
-      console.log(response);
-      if(response.status=="200"){
-        this.poliklinik = response.data;
-      }
+    console.log(response);
+    if(response.status=="200"){
+      let alert = this.alertCtrl.create({
+        title: 'Data Tersimpan!',
+        buttons: ['OK']
+      });
+         alert.present();
+         this.navCtrl.setRoot(TabsPage);
+    }
+
     });
   }
-
 
 }

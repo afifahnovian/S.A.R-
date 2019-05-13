@@ -51,9 +51,4 @@ export class JadwalPage {
   }
 
 
-
-
-
-
-
 }

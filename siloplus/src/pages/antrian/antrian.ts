@@ -1,6 +1,14 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+/**
+ * Generated class for the AntrianPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+@IonicPage()
 @Component({
   selector: 'page-antrian',
   templateUrl: 'antrian.html',
@@ -8,11 +16,10 @@ import { HomePage } from '../home/home';
 export class AntrianPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  
   }
 
-  gotoHomePage(){
-    this.navCtrl.push(HomePage);
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad AntrianPage');
   }
-  
+
 }
