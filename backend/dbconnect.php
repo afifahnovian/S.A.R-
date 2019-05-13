@@ -15,17 +15,14 @@
         exit(0);
     }
     // $localhost = "127.0.0.1";
-    $localhost = "localhost";
-    $username = "root";
-    $password = "";
-    $db_name = "siloplustest";
+    $localhost = "fdb24.atspace.me";
+    $username = "3036648_siloplus";
+    $password = "siloplus123";
+    $db_name = "3036648_siloplus";
     //create connection
     $connect = mysqli_connect($localhost, $username, $password, $db_name);
     //check connection
     if($connect->connect_error) {
         die("connection failed : ". $connect->connect_error);
-    } 
-    else {
-        echo "Successfully Connected";
     }
  ?>

@@ -1,25 +1,22 @@
 <ion-content id="back" padding>
-
-    <img id="siloplus" src="assets/icon/logo1.png"/>
-
-    <p id="selamat">Selamat Datang di SiloPlus!</p>
+  <p id="selamat">Selamat Datang di SiloPlus!</p>
 
   <ion-card>
-      <ion-card-content id="calendar">
+      <ion-card-content id="calendar" (click)="gotoJadwal()">
           <img id="calendar1" src="assets/icon/calendar-with-a-clock-time-tools.png"/>
           <p id="homefont">Jadwal Dokter</p>
       </ion-card-content>
   </ion-card>
 
   <ion-card>
-      <ion-card-content id="hospital">
+      <ion-card-content id="hospital" (click) = "gotoPoliklinikPage()">
           <img id="hospital1" src="assets/icon/hospital.png"/>
           <p id="homefont1">Poliklinik</p>
       </ion-card-content>
   </ion-card>
 
   <ion-card>
-      <ion-card-content id="bed">
+      <ion-card-content id="bed" (click)="gotoKamarPage()" >
           <img id="bed1" src="assets/icon/double-king-size-bed.png"/>
           <p id="homefont">Kamar Inap</p>
       </ion-card-content>

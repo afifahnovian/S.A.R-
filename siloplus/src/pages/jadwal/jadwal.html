@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tanggal : {{myDate | date:'dd - MM - yyyy'}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+        <ion-card *ngFor = "let data of jadwal">
+            <ion-card-header>
+    			{{ data.nama_dokter }}
+  			</ion-card-header>
+            <ion-card-content>
+    			{{ data.waktu }}
+  			</ion-card-content>
+        </ion-card>
+</ion-content>

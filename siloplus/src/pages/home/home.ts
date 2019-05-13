@@ -1,23 +1,35 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { RiwayatBerobatPage } from '../riwayat-berobat/riwayat-berobat';
-
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Data } from '../../providers/data';
+import { PoliklinikPage } from '../poliklinik/poliklinik';
+import { KamarPage } from '../kamar/kamar';
+import { JadwalPage } from '../jadwal/jadwal';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-  username : string;
-  password : string;
-  constructor(public navCtrl: NavController) {
 
-  }
+	constructor(
+		public navCtrl: NavController,
+		public data:Data
+		) {
+	}
 
-  gotoRiwayatBerobatPage(){
-    this.navCtrl.push(RiwayatBerobatPage);
-  
-  }
+	ionViewWillEnter() {
 
+	}
+
+	gotoPoliklinikPage(){
+		this.navCtrl.push(PoliklinikPage);
+	}
+
+	gotoKamarPage(){
+		this.navCtrl.push(KamarPage);
+	}
+
+	gotoJadwal(){
+		this.navCtrl.push(JadwalPage)
+	}
 }
-

@@ -1,8 +1,8 @@
 import { Component , ViewChild,trigger,transition,style,animate,keyframes,state } from '@angular/core';
-import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
+import { NavController, NavParams, Slides } from 'ionic-angular';
 import { HomePage } from '../home/home';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MethodCall } from '@angular/compiler';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { MethodCall } from '@angular/compiler';
 
 @Component({
   selector: 'page-onboard1',

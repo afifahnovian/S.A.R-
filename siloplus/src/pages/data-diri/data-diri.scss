@@ -1,15 +1,26 @@
-.list1{
+* {
+    box-sizing : border-box;
+}
+
+.gridi{
     position: absolute;
-    width: 134px;
-    height: 204px;
-    left: 29px;
-    top: 265px;
+    width: 80%;
+    height: 80%;
+    margin-top: 100px;
 }
 #fontdata{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 13.35px;
+    font-size: 20px;
+    line-height: normal;
+    color: #70ABB0;
+}
+#fontdata1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
     line-height: normal;
     color: #70ABB0;
 }

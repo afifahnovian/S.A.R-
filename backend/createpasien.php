@@ -2,19 +2,19 @@
     include 'dbconnect.php';
 
     $postdata = file_get_contents("php://input");
-
+    
     $member_id = "";
+    
     $nama_pasien = "";
     $tempat_lahir = "";
     $tanggal_lahir = "";
-    $telepon = "";
     $jenis_kelamin = "";
     $alamat = "";
 
     if (isset($postdata)) {
         $request = json_decode($postdata);
-
         $member_id = $request->member_id;
+
         $nama_pasien = $request->nama_pasien;
         $tempat_lahir = $request->tempat_lahir;
         $tanggal_lahir = $request->tanggal_lahir;
@@ -27,6 +27,7 @@
             if($query_register){
                  $data =array(
                      'message' => "Register Success!",
+                     'member_id'=> $member_id,
                      'status' => "200"
                  );
              }

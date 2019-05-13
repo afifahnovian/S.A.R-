@@ -12,9 +12,6 @@
         $telepon = $request->telepon;
         $password = $request->password;
         $confirm = $request->confirm;
-        
-        $cek = mysqli_query($connect, "SELECT * FROM pasiens WHERE 'member_id' = $member_id");
-
     
             if($request){
                 $query_register = mysqli_query($connect,"INSERT INTO pasiens (member_id, telepon, password) VALUES ('$member_id', '$telepon', '$password')");
@@ -38,8 +35,7 @@
                     'status' => "503"
                 ); 
             }
-
-        echo json_encode($data);
     }
+    echo json_encode($data);
     
 ?>

@@ -1,0 +1,53 @@
+<ion-content padding>
+  <form style="background: transparent;">
+    <ion-title>
+      <ul>
+        <li>
+          <a class="active">Isi Profil Anda</a>
+        </li>
+      </ul>
+    </ion-title>
+
+    <ion-list padding>
+
+      <ion-item>
+        <ion-label stacked color="primary">Nama</ion-label>
+        <ion-input type="text" [(ngModel)]="pasien.nama_pasien" name="nama_pasien"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label stacked color="primary">Tempat Lahir</ion-label>
+          <ion-input type="text" [(ngModel)]="pasien.tempat_lahir"  name="tempat_lahir"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label stacked color="primary">Tanggal Lahir</ion-label>
+          <ion-input type="text" [(ngModel)]="pasien.tanggal_lahir" name="tanggal_lahir"></ion-input>
+      </ion-item>
+
+      <ion-list radio-group [(ngModel)]="pasien.jenis_kelamin" name="jenis_kelamin" id="jenis">
+            <ion-item>Jenis</ion-item>
+
+            <ion-item>
+              <ion-label>Laki - laki</ion-label>
+              <ion-radio value="laki-laki"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Perempuan</ion-label>
+              <ion-radio value="perempuan"></ion-radio>
+            </ion-item>
+        </ion-list>
+
+      <ion-item>
+        <ion-label stacked color="primary">Alamat</ion-label>
+        <ion-textarea [(ngModel)]="pasien.alamat" name="alamat"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+          <button ion-button type="submit" color="#CBF1F5" full class="sub-but" (click)='updateData()'>Daftar</button>
+      </ion-item>
+
+    </ion-list>
+  </form>
+</ion-content>
