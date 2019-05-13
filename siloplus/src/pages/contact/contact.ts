@@ -11,11 +11,10 @@ import { TabsPage } from '../tabs/tabs';
 })
 export class ContactPage {
 
-	memesan = false;
-	pramemesan = true;
-
   pasien = {} as Pasien;
-  poliklinik:any;
+  antri : any;
+  top : any;
+
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -24,36 +23,31 @@ export class ContactPage {
     public http: Http,
     public data:Data
     ) {
-
   }
 
-  ionViewWillEnter() {
+  ionViewWillEnter(){
     this.data.getDataPasien().then((data) => {
       this.pasien.member_id = data.member_id;
+
+      console.log(data);
+      this.getAntri();
     })
+    
   }
 
-  pesanAntrian(){
-
+  getAntri(){
     let input = JSON.stringify({
-      member_id: this.pasien.member_id,
-      poliklinik: this.poliklinik
+      member_id: this.pasien.member_id
     });
-
     console.log(input);
-    this.http.post(this.data.BASE_URL+"/antrian.php", input).subscribe(data => {
-      let response = data.json();
-    console.log(response);
-    if(response.status=="200"){
-      let alert = this.alertCtrl.create({
-        title: 'Data Tersimpan!',
-        buttons: ['OK']
+      this.http.post(this.data.BASE_URL + "/read_antrian.php", input).subscribe(data => {
+          let response = data.json();
+          console.log(response);
+          if(response.status==200){
+            this.top = response.top;
+            this.antri = response.data;
+          }
       });
-         alert.present();
-         this.navCtrl.setRoot(TabsPage);
-    }
 
-    });
   }
-
 }

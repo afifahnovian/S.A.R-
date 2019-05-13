@@ -6,16 +6,14 @@ import { Pasien } from '../../providers/pasien';
 import { TabsPage } from '../tabs/tabs';
 
 @Component({
-  selector: 'page-contact',
-  templateUrl: 'contact.html'
+  selector: 'page-poliklinik',
+  templateUrl: 'poliklinik.html'
 })
 export class PoliklinikPage {
 
-  memesan = false;
-  pramemesan = true;
-
   pasien = {} as Pasien;
   poliklinik:any;
+
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
@@ -27,13 +25,16 @@ export class PoliklinikPage {
 
   }
 
-  ionViewWillEnter() {
+  // ionViewWillEnter() {
+  //   this.data.getDataPasien().then((data) => {
+  //     this.pasien.member_id = data.member_id;
+  //   })
+  // }
+
+  pesanAntrian(){
     this.data.getDataPasien().then((data) => {
       this.pasien.member_id = data.member_id;
     })
-  }
-
-  pesanAntrian(){
 
     let input = JSON.stringify({
       member_id: this.pasien.member_id,

@@ -14,7 +14,7 @@
 
 
 <ion-content padding>
-	<div *ngIf = "pramemesan">
+	<div>
 	<ion-list radio-group [(ngModel)]="poliklinik" name="poliklinik" id="poli">
         <ion-item>Pilih Poliklinik</ion-item>
 
@@ -74,7 +74,7 @@
 		</ion-item>
     </ion-list>
     <ion-item>
-          <button ion-button type="submit" color="#CBF1F5" full class="sub-but" (click)='pesanAntrian()'>Daftar</button>
+          <button ion-button type="submit" color="#CBF1F5" full class="sub-but" (click)="pesanAntrian()">Daftar</button>
     </ion-item>
 </div>
 

@@ -63,7 +63,7 @@ export class IsiProfilPage {
           loading.dismiss();
           this.data.logout();
           //magical row for soting locall data
-          this.data.login(this.pasien, response.data);
+          this.data.login(response.data, 'pasien');
 
           this.navCtrl.setRoot(TabsPage);
           let alert = this.alertCtrl.create({

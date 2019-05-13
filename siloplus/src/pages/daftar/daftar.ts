@@ -59,7 +59,7 @@ export class DaftarPage {
       this.http.post(this.data.BASE_URL + "/register.php", input).subscribe(data => {
           let response = data.json();
           console.log(response);
-          if(response.status==200){
+          if(response.status == 200){
             this.data.logout();
             this.data.login(this.pasien, 'pasien');
 
