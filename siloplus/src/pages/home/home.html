@@ -1,32 +1,28 @@
 <ion-content id="back" padding>
+    <ion-img id="logo" src="assets/imgs/logo/logo1.png"></ion-img>
   <p id="selamat">Selamat Datang di SiloPlus!</p>
-
   <ion-card>
-      <ion-card-content id="calendar" (click)="gotoJadwal()">
-          <img id="calendar1" src="assets/icon/calendar-with-a-clock-time-tools.png"/>
+      <ion-card-content id="calendar" (click)="gotojadwal()">
+          <ion-img id="calendar1" src="assets/icon/calendar-with-a-clock-time-tools.png"></ion-img>
           <p id="homefont">Jadwal Dokter</p>
       </ion-card-content>
   </ion-card>
-
   <ion-card>
-      <ion-card-content id="hospital" (click) = "gotoPoliklinikPage()">
-          <img id="hospital1" src="assets/icon/hospital.png"/>
+      <ion-card-content id="hospital">
+          <ion-img id="hospital1" src="assets/icon/hospital.png"></ion-img>
           <p id="homefont1">Poliklinik</p>
       </ion-card-content>
   </ion-card>
-
   <ion-card>
-      <ion-card-content id="bed" (click)="gotoKamarPage()" >
-          <img id="bed1" src="assets/icon/double-king-size-bed.png"/>
+      <ion-card-content id="bed">
+          <ion-img id="bed1" src="assets/icon/double-king-size-bed.png"></ion-img>
           <p id="homefont">Kamar Inap</p>
       </ion-card-content>
   </ion-card>
-
   <ion-card>
       <ion-card-content id="wri" (click)="gotoRiwayatBerobatPage()">
-          <img id="wri1" src="assets/icon/writing.png"/>
-          <p id="homefont">Riwayat</p>
+          <ion-img id="wri1" src="assets/icon/writing.png"></ion-img>
+          <p id="homefont1">Riwayat</p>
       </ion-card-content>
   </ion-card>
-
 </ion-content>
