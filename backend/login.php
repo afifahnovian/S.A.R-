@@ -12,7 +12,7 @@
     }
 
 
-    $query_login = mysqli_query($connect, "SELECT * FROM pasiens WHERE member_id = '$member_id'");
+    $query_login = mysqli_query($connect, "SELECT * FROM pasiens WHERE member_id = '$member_id' && password = '$password'");
 
     if(mysqli_num_rows($query_login)){
         $row=mysqli_fetch_assoc($query_login);

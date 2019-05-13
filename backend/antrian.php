@@ -13,20 +13,19 @@
 
 	$antrian = mysqli_query($connect, "SELECT no_antrian FROM antrian ORDER BY no_antrian DESC LIMIT 1");
         
-	$pasien = mysqli_query($connect, "SELECT id_pasien, nama_pasien FROM pasiens WHERE member_id = '$member_id'");
+	$pasien = mysqli_query($connect, "SELECT nama_pasien FROM pasiens WHERE member_id = '$member_id'");
 
 	$pasien = mysqli_fetch_assoc($pasien);
 
 	$pasien[] = $pasien;
 
-	$id_pasien = $pasien['id_pasien'];
 	$nama_pasien = $pasien['nama_pasien'];
 
 	if(!mysqli_num_rows($antrian)){
         $no_antrian = 1;
-		$insert = mysqli_query($connect, "INSERT INTO antrian VALUES ('$no_antrian', '$id_pasien' ,'$nama_pasien', '$poliklinik')");
+		$insert = mysqli_query($connect, "INSERT INTO antrian VALUES ('$no_antrian', '$member_id' ,'$nama_pasien', '$poliklinik')");
 
-		$query_login = mysqli_query($connect, "SELECT * FROM antrian WHERE id_pasien = '$id_pasien'");
+		$query_login = mysqli_query($connect, "SELECT * FROM antrian WHERE member_id = '$member_id'");
 
 	    if(mysqli_num_rows($query_login)){
 	        $row=mysqli_fetch_assoc($query_login);
