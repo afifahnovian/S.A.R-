@@ -19,9 +19,11 @@ import { PoliklinikPage } from '../pages/poliklinik/poliklinik';
 import { KamarPage } from '../pages/kamar/kamar';
 import { GantialamatPage } from '../pages/gantialamat/gantialamat';
 import { GantitelponPage } from '../pages/gantitelpon/gantitelpon';
+import { GantisandiPage } from '../pages/gantisandi/gantisandi';
 import { JadwalPage } from '../pages/jadwal/jadwal';
 import { AntrianPage } from '../pages/antrian/antrian';
 import { RiwayatPage } from '../pages/riwayat/riwayat';
+import { ProfildokterPage } from '../pages/profildokter/profildokter';
 
 
 import { HttpModule } from '@angular/http';
@@ -48,7 +50,9 @@ import { IsiProfilPage } from '../pages/isi-profil/isi-profil';
     KamarPage,
     GantialamatPage,
     JadwalPage,
+    GantisandiPage,
     GantitelponPage,
+    ProfildokterPage,
     AntrianPage
     // Onboard1Page
   ],
@@ -76,6 +80,8 @@ import { IsiProfilPage } from '../pages/isi-profil/isi-profil';
     PoliklinikPage,
     KamarPage,
     GantialamatPage,
+    ProfildokterPage,
+    GantisandiPage,
     JadwalPage,
     GantitelponPage,
     AntrianPage
