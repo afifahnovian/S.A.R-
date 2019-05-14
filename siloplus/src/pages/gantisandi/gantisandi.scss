@@ -13,31 +13,28 @@
     .list-md .item-block .item-inner {
       border-bottom: 0;
     }
-  
     ion-content{
       background: linear-gradient(0.36deg, #DEFCFC 0.17%, #FFFFFF 101.49%, #91CED4 101.49%);
+    
     }
     .toolbar-title-md{
       padding: 0;
     }
     .item-md{
         background: transparent;
-      }
-    
+    }
     ion-input{
         background: #CBF1F5;
         border-radius: 15px;
         padding: 0px 10px;
         box-shadow: 15px 5px 5px rgba(0, 0, 0, 0.1);
-      }
-    
-      .button-inner{
+    }
+    .button-inner{
         text-align: center;
         color: #426366;
         border-radius: 15px;
     
       }
-    
       .button-md{
         border-radius: 15px;
         background : linear-gradient(90deg, #99E1E5 0%, #DEFCFC 100%);

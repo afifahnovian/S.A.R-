@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the AntrianPage page.
+ * Generated class for the WaktuPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-antrian',
-  templateUrl: 'antrian.html',
+  selector: 'page-waktu',
+  templateUrl: 'waktu.html',
 })
-export class AntrianPage {
+export class WaktuPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AntrianPage');
+    console.log('ionViewDidLoad WaktuPage');
   }
 
 }

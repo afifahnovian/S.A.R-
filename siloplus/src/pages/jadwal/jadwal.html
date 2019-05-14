@@ -1,19 +1,55 @@
 <ion-header>
-
   <ion-navbar>
-    <ion-title>Tanggal : {{myDate | date:'dd - MM - yyyy'}}</ion-title>
+    <ion-title>Jadwal Dokter</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-<!-- print nama -->
-<ion-content padding> 
-        <ion-card *ngFor = "let data of jadwal">
-            <ion-card-header>
-    			{{ data.nama_dokter }}
-  			</ion-card-header>
-            <ion-card-content>
-    			{{ data.waktu }}
-  			</ion-card-content>
+<ion-content padding>
+<ion-card class="picker">
+<ion-item>
+    <ion-label> 
+    <ion-grid>
+        <ion-row>
+          <ion-col>Tanggal</ion-col>
+          <ion-col> {{myDate | date :'dd MMM yyyy'}}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-label> 
+  </ion-item>
+</ion-card>
+  <ion-card >
+    <ion-card-header class="namadokter">
+      Dr. Emily Wang
+    </ion-card-header>
+    <ion-card-content class="polidok">
+      Poliklinik Anak
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card >
+      <ion-card-header class="namadokter">
+        Dr. Sebastian
+      </ion-card-header>
+      <ion-card-content class="polidok">
+        Poliklinik Umum
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card >
+        <ion-card-header class="namadokter">
+          Dr. Sebastian
+        </ion-card-header>
+        <ion-card-content class="polidok">
+          Poliklinik Umum
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card >
+          <ion-card-header class="namadokter">
+            Dr. Sebastian
+          </ion-card-header>
+          <ion-card-content class="polidok">
+            Poliklinik Umum
+          </ion-card-content>
         </ion-card>
 </ion-content>

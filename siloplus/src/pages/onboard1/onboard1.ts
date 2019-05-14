@@ -1,8 +1,9 @@
 import { Component , ViewChild,trigger,transition,style,animate,keyframes,state } from '@angular/core';
-import { NavController, NavParams, Slides } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 import { HomePage } from '../home/home';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { MethodCall } from '@angular/compiler';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MethodCall } from '@angular/compiler';
+import { Login1Page } from '../login1/login1';
 
 @Component({
   selector: 'page-onboard1',
@@ -15,12 +16,12 @@ import { HomePage } from '../home/home';
         transition('* => rightSwipe', animate ('700ms ease-out',keyframes([
           style({transform : 'translateX(0)',offset : 0}),
           style({transform : 'translateX(-65px)',offset : .3}),
-          style({transform : 'translateX(0)',offset : 1}),
+          style({transform : 'translateX(0)',offset : 1}), 
         ]))),
         transition('* => leftSwipe', animate ('700ms ease-out',keyframes([
           style({transform : 'translateX(0)',offset : 0}),
           style({transform : 'translateX(65px)',offset : .3}),
-          style({transform : 'translateX(0)',offset : 1}),
+          style({transform : 'translateX(0)',offset : 1}), 
         ])))
       ])
 
@@ -35,8 +36,8 @@ export class Onboard1Page {
   ionViewDidLoad() {
     console.log('ionViewDidLoad Onboard1Page');
   }
-  skip(){ // jika ditekan tombol skip, direct to home
-    this.navCtrl.push(HomePage);
+  skip(){ // jika ditekan tombol skip, direct to home 
+    this.navCtrl.push(Login1Page);
   }
   slideChanged(){ // pas slide terakhir
     if(this.slides.isEnd())
@@ -48,7 +49,5 @@ export class Onboard1Page {
     else
       this.state = 'leftSwipe';
   }
-  animationDone(){
-    this.state = 'x';
-  }
+  
 }

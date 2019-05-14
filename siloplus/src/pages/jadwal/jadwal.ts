@@ -1,54 +1,22 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
-import { Data } from '../../providers/data';
-import { Http } from '@angular/http';
-
-/**
- * Generated class for the JadwalPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
-@Component({
+@Component({ 
   selector: 'page-jadwal',
   templateUrl: 'jadwal.html',
 })
-
 export class JadwalPage {
-
-
-	jadwal: any;
   myDate = new Date();
-
-  constructor(
-    public navCtrl: NavController,
-    public navParams: NavParams,
-    public loadCtrl: LoadingController,
-    public alertCtrl: AlertController,
-    public data: Data,
-    public http: Http
-    ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    // this.getFormattedDate()
   }
-
+  // getFormattedDate(){
+  //   var dateObj = new Date()
+  //   var year = dateObj.getFullYear().toString()
+  //   var month = dateObj.getMonth().toString()
+  //   var date = dateObj.getDate().toString()
+  //   this.formattedDate = year+'/'+ month +'/'+date ;
+  // } 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad JadwalPage');
-  }
-
-  ionViewWillEnter(){
-  	this.getJadwal();
-  }
-
-  getJadwal(){
-  	this.http.get(this.data.BASE_URL+"/jadwal.php").subscribe(data => {
-      let response = data.json();
-      console.log(response);
-      if(response.status=="200"){
-        this.jadwal = response.data;
-      }
-    });
-  }
-
-
-}
+    console.log('ionViewDidLoad JadwalPage')}}
