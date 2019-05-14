@@ -3,7 +3,7 @@ import {  NavController, NavParams, LoadingController, AlertController } from 'i
 import { Http } from '@angular/http';
 import { Data } from '../../providers/data';
 import { Pasien } from '../../providers/pasien';
-import { TabsPage } from '../tabs/tabs';
+import { AntrianPage } from '../antrian/antrian';
 
 @Component({
   selector: 'page-contact',
@@ -14,6 +14,7 @@ export class ContactPage {
   pasien = {} as Pasien;
   antri : any;
   top : any;
+  masuk:boolean;
 
   constructor(
     public navCtrl: NavController, 
@@ -39,13 +40,21 @@ export class ContactPage {
     let input = JSON.stringify({
       member_id: this.pasien.member_id
     });
+
     console.log(input);
       this.http.post(this.data.BASE_URL + "/read_antrian.php", input).subscribe(data => {
           let response = data.json();
           console.log(response);
-          if(response.status==200){
+          if(response.status == 200){
             this.top = response.top;
             this.antri = response.data;
+            this.masuk = false;
+          }
+          else if(response.status == 400 || response.status == 505){
+            this.masuk = true;
+          }
+          else if(response.status == 403){
+            this.navCtrl.push(AntrianPage);
           }
       });
 

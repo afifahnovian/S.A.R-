@@ -20,6 +20,9 @@ import { KamarPage } from '../pages/kamar/kamar';
 import { GantialamatPage } from '../pages/gantialamat/gantialamat';
 import { GantitelponPage } from '../pages/gantitelpon/gantitelpon';
 import { JadwalPage } from '../pages/jadwal/jadwal';
+import { AntrianPage } from '../pages/antrian/antrian';
+import { RiwayatPage } from '../pages/riwayat/riwayat';
+
 
 import { HttpModule } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
@@ -34,6 +37,7 @@ import { IsiProfilPage } from '../pages/isi-profil/isi-profil';
     ContactPage,
     HomePage,
     TabsPage,
+    RiwayatPage,
     DaftarPage,
     ProfilPasienPage,
     SettingPage,
@@ -44,7 +48,8 @@ import { IsiProfilPage } from '../pages/isi-profil/isi-profil';
     KamarPage,
     GantialamatPage,
     JadwalPage,
-    GantitelponPage
+    GantitelponPage,
+    AntrianPage
     // Onboard1Page
   ],
   imports: [
@@ -60,6 +65,7 @@ import { IsiProfilPage } from '../pages/isi-profil/isi-profil';
     AboutPage,
     ContactPage,
     HomePage,
+    RiwayatPage,
     TabsPage,
     DaftarPage,
     ProfilPasienPage,
@@ -71,7 +77,8 @@ import { IsiProfilPage } from '../pages/isi-profil/isi-profil';
     KamarPage,
     GantialamatPage,
     JadwalPage,
-    GantitelponPage
+    GantitelponPage,
+    AntrianPage
     // Onboard1Page
   ],
   providers: [

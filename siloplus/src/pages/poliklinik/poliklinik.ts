@@ -25,16 +25,13 @@ export class PoliklinikPage {
 
   }
 
-  // ionViewWillEnter() {
-  //   this.data.getDataPasien().then((data) => {
-  //     this.pasien.member_id = data.member_id;
-  //   })
-  // }
-
-  pesanAntrian(){
+  ionViewWillEnter() {
     this.data.getDataPasien().then((data) => {
       this.pasien.member_id = data.member_id;
     })
+  }
+
+  pesanAntrian(){
 
     let input = JSON.stringify({
       member_id: this.pasien.member_id,

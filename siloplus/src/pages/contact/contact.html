@@ -26,11 +26,14 @@
 			<ion-card-header *ngFor = "let date of top">
 				{{date.no_antrian}}
 			</ion-card-header>
+			<ion-card-header *ngIf = "masuk">
+				Belum mendaftar antrian
+			</ion-card-header>
 		</ion-card>
 	</div>
+
+	<!-- <button ion-button full *ngIf = "data.no_antrian == date.no_antrian"></button> -->
 </div>
 
-    <!-- <p id="giliran">Sekarang Giliran Anda</p>
-    <ion-item id="nomorantrian">10</ion-item>
-    <button ion-button id="antrianbutton" (click)="gotoHomePage()">Konfirmasi</button> -->
+    
 </ion-content>
