@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Jadwal Dokter</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-card class="picker">
+<ion-item>
+    <ion-label> 
+    <ion-grid>
+        <ion-row>
+          <ion-col>Tanggal</ion-col>
+          <ion-col> {{myDate | date :'dd MMM yyyy'}}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-label> 
+  </ion-item>
+</ion-card>
+
+
+  <ion-card  *ngFor = "let data of jadwal">
+    <ion-card-header class="namadokter">
+      {{data.nama_dokter}}
+    </ion-card-header>
+    <ion-card-content class="polidok">
+      {{data.waktu}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
