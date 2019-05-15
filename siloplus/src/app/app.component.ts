@@ -7,6 +7,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { DaftarPage } from '../pages/daftar/daftar';
 import { Data } from '../providers/data';
 import { TabsPage } from '../pages/tabs/tabs';
+import { AwalpagePage } from '../pages/awalpage/awalpage';
+import { Onboard1Page } from '../pages/onboard1/onboard1';
+import { Login1Page } from '../pages/login1/login1';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -14,9 +18,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-
   // make HelloIonicPage the root (or first) page
-  rootPage : any;
+  rootPage : any ;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -41,7 +44,7 @@ export class MyApp {
         if(value){
           this.rootPage = TabsPage;
         } else {
-           this.rootPage = DaftarPage;
+           this.rootPage = AwalpagePage;
         }
       });
 
