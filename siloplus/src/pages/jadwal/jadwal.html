@@ -7,7 +7,7 @@
 <ion-content padding>
 <ion-card class="picker">
 <ion-item>
-  <ion-label> 
+    <ion-label> 
     <ion-grid>
         <ion-row>
           <ion-col>Tanggal</ion-col>
@@ -18,12 +18,14 @@
   </ion-item>
 </ion-card>
 
-        <ion-card *ngFor = "let data of jadwal">
-        <ion-card-header class="namadokter">
-    			{{ data.nama_dokter }}
-  			</ion-card-header>
-            <ion-card-content class="polidok">
-    			{{ data.waktu }}
-  			</ion-card-content>
-        </ion-card>
+
+  <ion-card  *ngFor = "let data of jadwal" (click) = 'gotoProfil($event, data)'>
+    <ion-card-header class="namadokter">
+      {{data.nama_dokter}}
+    </ion-card-header>
+    <ion-card-content class="polidok">
+      {{data.waktu}}
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

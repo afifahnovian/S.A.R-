@@ -4,17 +4,20 @@ import { Data } from '../../providers/data';
 import { PoliklinikPage } from '../poliklinik/poliklinik';
 import { KamarPage } from '../kamar/kamar';
 import { JadwalPage } from '../jadwal/jadwal';
+import { RiwayatPage } from '../riwayat/riwayat';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
+
 	constructor(
 		public navCtrl: NavController,
 		public data:Data
 		) {
 	}
+
 	ionViewWillEnter() {
 
 	}
@@ -28,6 +31,10 @@ export class HomePage {
 	}
 
 	gotoJadwal(){
-		this.navCtrl.push(JadwalPage);
+		this.navCtrl.push(JadwalPage)
+	}
+
+	gotoRiwayatBerobatPage(){
+		this.navCtrl.push(RiwayatPage);
 	}
 }

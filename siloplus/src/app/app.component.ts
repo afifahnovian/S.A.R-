@@ -44,7 +44,7 @@ export class MyApp {
         if(value){
           this.rootPage = TabsPage;
         } else {
-           this.rootPage = AwalpagePage;
+           this.rootPage = DaftarPage;
         }
       });
 

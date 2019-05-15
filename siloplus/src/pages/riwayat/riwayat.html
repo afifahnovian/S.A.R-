@@ -8,19 +8,27 @@
 
 
 <ion-content padding>
-  <ion-card class="cardriwayat">
+  <ion-card class="cardriwayat" *ngFor = "let data of riwayat">
     <div class="dokter">
     <ion-card-header>
-      Dr. Marimar 
+      {{data.nama_dokter}}
     </ion-card-header>
   </div>
     <div class="subcriwayat">
     <ion-card-content >
-      Poli Anak
+      {{data.poli}}
     </ion-card-content>
     <ion-card-content >
-      Sabtu,9 Februari 2019
+      {{data.waktu_berobat}}
     </ion-card-content>
   </div>
   </ion-card>
+
+  <ion-card *ngIf = "kosong">
+    <div>
+      <ion-img class="logo" src="assets/imgs/nullpage.png"></ion-img>
+    </div>
+  </ion-card>
+
+
 </ion-content>

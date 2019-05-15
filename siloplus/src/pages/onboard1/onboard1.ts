@@ -37,7 +37,7 @@ export class Onboard1Page {
     console.log('ionViewDidLoad Onboard1Page');
   }
   skip(){ // jika ditekan tombol skip, direct to home 
-    this.navCtrl.push(Login1Page);
+    this.navCtrl.setRoot(Login1Page);
   }
   slideChanged(){ // pas slide terakhir
     if(this.slides.isEnd())

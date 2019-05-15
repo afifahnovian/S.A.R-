@@ -20,6 +20,9 @@ import { KamarPage } from '../pages/kamar/kamar';
 import { GantialamatPage } from '../pages/gantialamat/gantialamat';
 import { GantitelponPage } from '../pages/gantitelpon/gantitelpon';
 import { JadwalPage } from '../pages/jadwal/jadwal';
+import { RiwayatPage } from '../pages/riwayat/riwayat';
+import { AntrianPage } from '../pages/antrian/antrian';
+import { ProfildokterPage } from '../pages/profildokter/profildokter';
 
 import { HttpModule } from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
@@ -28,7 +31,7 @@ import { IsiProfilPage } from '../pages/isi-profil/isi-profil';
 
 import { Onboard1Page } from '../pages/onboard1/onboard1';
 import { AwalpagePage } from '../pages/awalpage/awalpage';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -48,14 +51,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     KamarPage,
     GantialamatPage,
     JadwalPage,
+    AntrianPage,
     GantitelponPage,
+    ProfildokterPage,
+    RiwayatPage,
    AwalpagePage,
    Onboard1Page
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule,
     IonicStorageModule.forRoot(),
     IonicModule.forRoot(MyApp)
   ],
@@ -70,12 +76,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProfilPasienPage,
     SettingPage,
     IsiProfilPage,
+    RiwayatPage,
     Login1Page,
     DataDiriPage,
     PoliklinikPage,
     KamarPage,
     GantialamatPage,
+    AntrianPage,
     JadwalPage,
+    ProfildokterPage,
     GantitelponPage,
      AwalpagePage,
      Onboard1Page

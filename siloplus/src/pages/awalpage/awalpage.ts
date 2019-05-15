@@ -7,9 +7,11 @@ import { Onboard1Page } from '../onboard1/onboard1';
   templateUrl: 'awalpage.html',
 })
 export class AwalpagePage {
+  
   gotoonboard(){
     this.navCtrl.push(Onboard1Page);
   }
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

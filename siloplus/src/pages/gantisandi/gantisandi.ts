@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController, LoadingController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { SettingPage } from '../setting/setting';
 import { Http } from '@angular/http';
 import { Pasien } from '../../providers/pasien';
@@ -11,10 +11,12 @@ import { Data } from '../../providers/data';
   templateUrl: 'gantisandi.html',
 })
 export class GantisandiPage {
+
   pasien = {} as Pasien;
   sandibaru: any;
+
   constructor(
-    public navCtrl: NavController, 
+    public navCtrl: NavController,
     public navParams: NavParams,
     public data: Data,
     public http:Http,
@@ -22,12 +24,14 @@ export class GantisandiPage {
     public alertCtrl: AlertController
     ) {
   }
+
   ionViewWillEnter() {
     this.data.getDataPasien().then((data) => {
       this.pasien.member_id = data.member_id;
       this.pasien.password = data.password;
     })
   }
+
   gotoawal(){
     let loading = this.loadCtrl.create({
         content: 'memuat..'
@@ -74,4 +78,3 @@ export class GantisandiPage {
 
   }
 }
-

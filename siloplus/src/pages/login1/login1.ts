@@ -5,7 +5,6 @@ import { Data } from '../../providers/data';
 import { NgForm } from '@angular/forms';
 import { Pasien } from '../../providers/pasien';
 import { TabsPage } from '../../pages/tabs/tabs';
-import { DaftarPage } from '../daftar/daftar';
 
 @Component({
   selector: 'page-login1',
@@ -30,7 +29,7 @@ export class Login1Page {
   }
 
   opendaftar(){
-    this.navCtrl.push(DaftarPage);
+    this.navCtrl.pop();
   }
 
   login(form: NgForm){
