@@ -8,17 +8,17 @@
   <ion-list>
     <ion-item>
       <ion-label stacked color="primary">Kata sandi lama </ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" [(ngModel)]="pasien.password" name="password"></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label stacked color="primary">Kata sandi baru</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input type="password" [(ngModel)]="sandibaru" ></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label stacked color="primary">Ketik ulang kata sandi</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input type="password" [(ngModel)]="pasien.confirm" ></ion-input>
     </ion-item>
 
     <ion-item>
