@@ -3,12 +3,6 @@ import { IonicPage, NavController, NavParams, LoadingController, AlertController
 import { Data } from '../../providers/data';
 import { Http } from '@angular/http';
 import { ProfildokterPage } from '../profildokter/profildokter';
-/**
- * Generated class for the JadwalPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -22,7 +16,6 @@ export class JadwalPage {
 	jadwal: any;
   myDate = new Date();
   nama_dokter: any;
-
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
@@ -50,10 +43,9 @@ export class JadwalPage {
       }
     });
   }
-
-  gotoProfil(data){
-    console.log(data);
-    this.navCtrl.push(ProfildokterPage, data);
+  gotoProfil(event, data){
+    this.navCtrl.push(ProfildokterPage, {data:data});
   }
+
 
 }

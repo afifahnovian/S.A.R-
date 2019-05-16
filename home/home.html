@@ -1,0 +1,32 @@
+<ion-content id="back" padding>
+    <ion-img id="logo" src="assets/icon/logo1.png"></ion-img>
+  <p id="selamat">Selamat Datang di SiloPlus!</p>
+
+  <ion-card>
+      <ion-card-content id="calendar" (click)="gotoJadwal()">
+          <ion-img id="calendar1" src="assets/icon/calendar-with-a-clock-time-tools.png"></ion-img>
+          <p id="homefont">Jadwal Dokter</p>
+      </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-content id="hospital" (click) = "gotoPoliklinikPage()" >
+          <ion-img id="hospital1" src="assets/icon/hospital.png"></ion-img>
+          <p id="homefont1">Poliklinik</p>
+      </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-content id="bed" (click)="gotoKamarPage()" >
+          <ion-img id="bed1" src="assets/icon/double-king-size-bed.png"></ion-img>
+          <p id="homefont">Kamar Inap</p>
+      </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-content id="wri" (click)="gotoRiwayatBerobatPage()">
+          <ion-img id="wri1" src="assets/icon/writing.png"></ion-img>
+          <p id="homefont1">Riwayat</p>
+      </ion-card-content>
+  </ion-card>
+</ion-content>

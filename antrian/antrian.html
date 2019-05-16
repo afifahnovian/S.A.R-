@@ -1,0 +1,18 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Antrian</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+	<p id="giliran">Sekarang Giliran Anda</p>
+	
+    <ion-item id="nomorantrian" *ngFor="let data of top"> 
+    	{{data.no_antrian}} 
+	</ion-item>
+
+    <button ion-button id="antrianbutton" (click)="gotoHomePage()">Konfirmasi</button>
+</ion-content>

@@ -1,0 +1,75 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>poliklinik</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div>
+	<ion-list radio-group [(ngModel)]="poliklinik" name="poliklinik" id="poli">
+        <ion-item>Pilih Poliklinik</ion-item>
+
+        <ion-item>
+            <ion-label>Poli Rehabiltasi  Medik</ion-label>
+            <ion-radio value="Poli Rehabiltasi  Medik"></ion-radio>
+    	</ion-item>
+
+		<ion-item>
+			<ion-label>Poli Kelamin</ion-label>
+			<ion-radio value = "Poli Kelamin"></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>Poli Organ Dalam</ion-label>
+			<ion-radio value = "Poli Organ Dalam"></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>Poli Anak</ion-label>
+			<ion-radio value = "Poli Anak"></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>Poli Umum</ion-label>
+			<ion-radio value = "Poli Umum"></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>Poli Jantung</ion-label>
+			<ion-radio value = "Poli Jantung"></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>Poli penyakit dalam</ion-label>
+			<ion-radio value = "Poli penyakit dalam"></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>Poli Kulit dan Kecantikan</ion-label>
+			<ion-radio value = "Poli Kulit dan Kecantikan"></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>Poli Kebidanan dan Kandungan</ion-label>
+			<ion-radio value = "Poli Kebidanan dan Kandungan"></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>Poli Bedah Saraf</ion-label>
+			<ion-radio value = "Poli Bedah Saraf"></ion-radio>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>Poli Orthopaedi</ion-label>
+			<ion-radio value = "Poli Orthopaedi"></ion-radio>
+		</ion-item>
+    </ion-list>
+    <ion-item>
+          <button ion-button type="submit" color="#CBF1F5" full class="sub-but" (click)="pesanAntrian()">Daftar</button>
+    </ion-item>
+</div>
+
+</ion-content>

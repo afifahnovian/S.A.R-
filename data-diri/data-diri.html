@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Data Diri</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-grid padding id="gridi">
+  <ion-row>
+    <ion-col id="fontdata">Nama</ion-col>
+    <ion-col id="fontdata1">{{pasien.nama_pasien}}</ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col id="fontdata">TTL</ion-col>
+    <ion-col id="fontdata1">{{pasien.tempat_lahir}}, {{pasien.tanggal_lahir}}</ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col id="fontdata">Jenis kelamin</ion-col>
+    <ion-col id="fontdata1">{{pasien.jenis_kelamin}}</ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col id="fontdata">Telepon</ion-col>
+    <ion-col id="fontdata1">{{pasien.telepon}}</ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col id="fontdata">Alamat</ion-col>
+    <ion-col id="fontdata1">{{pasien.alamat}}</ion-col>
+  </ion-row>
+  
+</ion-grid>
+
+</ion-content>
