@@ -1,30 +1,29 @@
 page-login1{
+  *{
+    box-sizing: border-box;
+  }
   .list-md .item-block .item-inner {
     border-bottom: 0;
   }
+
+  .list-md{ //jarak list
+      padding: 60px 20px 10px;
+  }
   ion-content{
-    width:360px;
-    height: 640;
-    left: 0px;
-    top: 0px;
     background: linear-gradient(0.36deg, #DEFCFC 0.17%, #FFFFFF 101.49%, #91CED4 101.49%);
   }
   .toolbar-title-md{
-    padding: 85px 18px 10px;//top,left,right
+    padding: 85px 5px 10px;
   }
   ion-title ul{
     padding-left: 0;
   }
-
   ion-title ul li{
     text-decoration: none;
     display: inline;
   }
   .masuk{
     margin-left: 10px;
-  }
-  .masuk a{
-    color: #70ABB0;
   }
   .separator{
     width: 4px;
@@ -39,11 +38,17 @@ page-login1{
     text-decoration: none;
     color: #C4C4C4;
   }
+
   ion-title a:active{
     color:#70ABB0;
   }
-  .list-md{ //jarak list
-      padding: 60px 20px 10px;
+
+  ion-title a.active{
+    color:#70ABB0;
+  }
+
+  .scroll-content .list-md{
+    padding: 70px 8px 10px;
   }
   .label-md[stacked] {
     font-family: Roboto;
@@ -53,12 +58,14 @@ page-login1{
     color: #70ABB0;
     margin-bottom: 5px;
   }
+
   ion-input{
     background: #CBF1F5;
     border-radius: 15px;
     padding: 0px 10px;
     box-shadow: 15px 5px 5px rgba(0, 0, 0, 0.1);
   }
+
   .button-inner{
     text-align: center;
     color: black;
@@ -73,24 +80,19 @@ page-login1{
   .label-md {
     margin: 13px 0px 13px 0;
   }
-  .sub-button{
-    margin: 20px 0 30px;
+  .sub-but{
+    margin: 10px 0 30px;
     color: #426366
   }
-  
+
   .box-pendaftar{
     margin-top: auto;
     font-family: Roboto;
     font-size: 16px;
     line-height: normal;
     text-align: center;
-    
+
     background-color: transparent;
   }
 
-  .belum-daftar{
-    text-align: center;
-    color: #426366;
-  }
-  
 }

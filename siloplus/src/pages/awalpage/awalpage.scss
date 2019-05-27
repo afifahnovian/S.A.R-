@@ -1,9 +1,21 @@
 page-awalpage {
-ion-img{
+.logo{
     position: absolute;
-    width: 206px;
-    height: 283px;
+    width: 310px;
+    height: 338px;
+    left: 5px;
+    top: 132px;
     background: transparent;
-    margin: 38px;
+   
+}
+
+ion-img.img-loaded {
+    position: absolute;
+    width: 310px;
+    height: 350px;
+    margin: 1px;
+    top: 0%;
+    left: 7%;
+    background-color: transparent;
 }
 }

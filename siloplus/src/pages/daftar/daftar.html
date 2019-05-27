@@ -14,27 +14,27 @@
 
       <ion-list padding>
         <ion-item>
-          <ion-label stacked color="primary">Member Id</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-label stacked color="primary">Username</ion-label>
+          <ion-input type="text" [(ngModel)]="pasien.member_id" name="member_id"></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-label stacked color="primary">No. Telepon</ion-label>
-            <ion-input type="number"></ion-input>
+            <ion-input type="number" [(ngModel)]="pasien.telepon"  name="telepon"></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-label stacked color="primary">Kata Sandi</ion-label>
-            <ion-input type="password"></ion-input>
+            <ion-input type="password" [(ngModel)]="pasien.password" name="password"></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-label stacked color="primary">Konfirmasi Kata Sandi</ion-label>
-            <ion-input type="password"></ion-input>
+            <ion-input type="password" [(ngModel)]="pasien.confirm" name="confirm"></ion-input>
         </ion-item>
 
         <ion-item>
-            <button ion-button type="submit" color="#CBF1F5" full class="sub-but" (click)='gotohome()'>Daftar</button>
+            <button ion-button type="submit" color="#CBF1F5" full class="sub-but" (click)="register()">Daftar</button>
         </ion-item>
       </ion-list>
     </form>

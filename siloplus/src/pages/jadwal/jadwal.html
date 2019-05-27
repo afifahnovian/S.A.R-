@@ -7,7 +7,7 @@
 <ion-content padding>
 <ion-card class="picker">
 <ion-item>
-    <ion-label> 
+  <ion-label> 
     <ion-grid>
         <ion-row>
           <ion-col>Tanggal</ion-col>
@@ -17,39 +17,13 @@
     </ion-label> 
   </ion-item>
 </ion-card>
-  <ion-card >
-    <ion-card-header class="namadokter">
-      Dr. Emily Wang
-    </ion-card-header>
-    <ion-card-content class="polidok">
-      Poliklinik Anak
-    </ion-card-content>
-  </ion-card>
-  
-  <ion-card >
-      <ion-card-header class="namadokter">
-        Dr. Sebastian
-      </ion-card-header>
-      <ion-card-content class="polidok">
-        Poliklinik Umum
-      </ion-card-content>
-    </ion-card>
 
-    <ion-card >
+        <ion-card *ngFor = "let data of jadwal" (click) = 'gotoProfil($event, data)'>
         <ion-card-header class="namadokter">
-          Dr. Sebastian
-        </ion-card-header>
-        <ion-card-content class="polidok">
-          Poliklinik Umum
-        </ion-card-content>
-      </ion-card>
-
-      <ion-card >
-          <ion-card-header class="namadokter">
-            Dr. Sebastian
-          </ion-card-header>
-          <ion-card-content class="polidok">
-            Poliklinik Umum
-          </ion-card-content>
+    			{{ data.nama_dokter }}
+  			</ion-card-header>
+            <ion-card-content class="polidok">
+    			{{ data.waktu }}
+  			</ion-card-content>
         </ion-card>
 </ion-content>

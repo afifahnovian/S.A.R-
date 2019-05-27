@@ -5,7 +5,9 @@ page-daftar{
   .list-md .item-block .item-inner {
     border-bottom: 0;
   }
-
+  #jenis{
+    padding: 0;
+  }
   .list-md{ //jarak list
       padding: 60px 20px 10px;
   }
@@ -78,7 +80,7 @@ page-daftar{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.10);
   }
   .label-md {
-    margin: 13px 0px 13px ;
+    margin: 13px 0px 13px 0;
   }
   .sub-but{
     margin: 10px 0 30px;
